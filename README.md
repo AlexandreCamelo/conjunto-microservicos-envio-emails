@@ -16,6 +16,10 @@ Os microserviços funcionam em conjunto com o RABBITMQ e com o KEYCLOAK. Dessa f
 
 
 OBS: suba os containers RABBITMQ e KEYCLOAK, antes de subir os 4 microserviços, abaixo.
+
+Após subir o keycloak, você deverá configurar um novo REALM, chamado 'keycloak_diehardweb' (sem aspas) e, dentro dele, criar um client, chamado 'diehardemails' (sem aspas). 
+
+Não entrarei em detalhe sobre como configurar essas duas aplicações, pois não faz parte desse escopo.
  
  
  
