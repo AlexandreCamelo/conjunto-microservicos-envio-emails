@@ -17,13 +17,13 @@ Após subir o RABBITMQ, você deverá criar uma fila, chamada 'diehardemail' (se
 
 Após subir o KEYCLOAK, você deverá configurar um novo REALM, chamado 'keycloak_diehardweb' (sem aspas) e, dentro dele, criar um client, chamado 'diehardemails' (sem aspas). 
 
-Não entrarei em detalhe sobre como configurar essas duas aplicações, pois não faz parte do escopo. Caso não saiba fazer isso, entre nos seus respectivos sites e leia  suas documentações (https://www.keycloak.org/ e https://www.rabbitmq.com/).
+Não entrarei em detalhes sobre como configurar essas duas aplicações, pois isso foge ao escopo. Caso não saiba fazer isso, entre nos seus respectivos sites e leia  suas documentações (https://www.keycloak.org/ e https://www.rabbitmq.com/).
  
  
-OBS: suba os containers RABBITMQ e KEYCLOAK, ANTES de subir os 4 microserviços, abaixo.
+OBS: suba os containers RABBITMQ e KEYCLOAK, ANTES de subir os 4 microserviços, abaixo. Caso não faça isso, erros ocorrerão.
  
  </br></br></br>
-Para que cada microserviço funcione adequadamente, eles deverão estar funcionando ao mesmo tempo.
+Para que cada microserviço funcione adequadamente, todos eles deverão estar em funcionamento, ao mesmo tempo.
  
  Os microserviços são:
   <code>
@@ -48,7 +48,7 @@ Para que cada microserviço funcione adequadamente, eles deverão estar funciona
  
  Em cada uma das requisições, acima, você deverá colocar um objeto 'Emailenviar' em seu corpo.
  
- O modelo desse objeto, em JSON, está no arquivo 'objEmailEnviar.txt', que está na raiz do projeto <code>conjunto-microservicos-envio-emails</code>.
+ O modelo desse objeto está no arquivo 'objEmailEnviar.txt', que está na raiz do projeto <code>conjunto-microservicos-envio-emails</code>. Está no formato JSON, prontinho para você copiar e colar, no seu client rest (recomendo o INSOMNIA
  
  O objeto possui alguns campos de configuração do email, para que seja possível seu envio. Preencha esses campos, corretamente, de acordo com as instruções do seu servidor de email.
  O objeto também possui campos para preenchimento dos dados do email, tais como: remetente, destinatário, assunto, corpo, etc. 
