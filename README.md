@@ -22,7 +22,7 @@ Não entrarei em detalhe sobre como configurar essas duas aplicações, pois nã
  
 OBS: suba os containers RABBITMQ e KEYCLOAK, ANTES de subir os 4 microserviços, abaixo.
  
- 
+ </br></br></br>
 Para que cada microserviço funcione adequadamente, eles deverão estar funcionando ao mesmo tempo.
  
  Os microserviços são:
