@@ -26,7 +26,7 @@ OBS: suba os containers RABBITMQ e KEYCLOAK, ANTES de subir os 4 microserviços,
 Para que cada microserviço funcione adequadamente, eles deverão estar funcionando ao mesmo tempo.
  
  Os microserviços são:
-  
+  <code>
  1) conjunto-microservicos-eureka;
  
  2) conjunto-microservicos-gateway;
@@ -34,7 +34,7 @@ Para que cada microserviço funcione adequadamente, eles deverão estar funciona
  3) conjunto-microservicos-envio-emails;
  
  4) conjunto-microservicos-clientes.
- 
+ </code>
  
  Obs: para que não haja erros, eles deverão ser executados na ordem acima.
  
