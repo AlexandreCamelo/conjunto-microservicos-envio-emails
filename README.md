@@ -41,10 +41,9 @@ Para que cada microserviço funcione adequadamente, eles deverão estar funciona
  
  Os endpoints que você poderá acessar, são:
  
- http://localhost:8801/emails/enviar  (POST)
- 
- http://localhost:8801/clientes/enviarEmail  (POST)
- http://localhost:8801/clientes/enviarEmailMensageria  (POST)
+ http://localhost:8801/emails/enviar  (POST)</br>
+ http://localhost:8801/clientes/enviarEmail  (POST))</br>
+ http://localhost:8801/clientes/enviarEmailMensageria  (POST))</br>
  
  
  Em cada uma das requisições, acima, você deverá colocar um objeto 'Emailenviar' em seu corpo.
