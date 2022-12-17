@@ -55,7 +55,7 @@ Para que cada microserviço funcione adequadamente, eles deverão estar funciona
  
  O corpo do email pode ser preenchido com instruções HTML, para formatação do mesmo.
  
- Existem um campos para confecção de uma assinatura ao final do corpo do email. A assinatura poderá ter, inclusive uma imagem.
+ Existem campos para confecção de uma assinatura ao final do corpo do email. A assinatura poderá ter, inclusive uma imagem.
  
  
  
