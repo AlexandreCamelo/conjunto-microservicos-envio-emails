@@ -49,7 +49,14 @@ Para que cada microserviço funcione adequadamente, eles deverão estar funciona
  
  Em cada uma das requisições, acima, você deverá colocar um objeto 'Emailenviar' em seu corpo.
  
- O modelo desse objeto, em JSON, está no arquivo 'objEmailEnviar.txt', que está na raiz do projeto <code>conjunto-microservicos-envio-emails</code>
+ O modelo desse objeto, em JSON, está no arquivo 'objEmailEnviar.txt', que está na raiz do projeto <code>conjunto-microservicos-envio-emails</code>.
+ 
+ O objeto possui alguns campos de configuração do email, para que seja possível seu envio. Preencha esses campos, corretamente, de acordo com as instruções do seu servidor de email.
+ O objeto também possui campos para preenchimento dos dados do email, tais como: remetente, destinatário, assunto, corpo, etc. 
+ 
+ O corpo do email pode ser preenchido com instruções HTML, para formatação do mesmo.
+ 
+ Existem um campos para confecção de uma assinatura ao final do corpo do email. A assinatura poderá ter, inclusive uma imagem.
  
  
  
