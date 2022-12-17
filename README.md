@@ -3,10 +3,10 @@
  Esse projeto faz parte de um conjunto de 4 projetos/microserviços, que estão publicados, aqui, em meu repositório. Faça um clone dos 4 e siga as instruções, abaixo.
  
  
-Os microserviços funcionam em conjunto com o RABBITMQ e com o KEYCLOAK. Dessa forma, para que o sistema de microserviços funcione, você precisará subir cointainers docker, contendo essas duas aplicações. 
+Os microserviços foram construídos com o Spring Boot e funcionam em conjunto com o RABBITMQ e o KEYCLOAK. Dessa forma, para que o conjunto completo de microserviços funcione corretamente, você precisará subir cointainers docker, contendo essas duas aplicações. 
 
 
- Na data da publicação desse repositório, os comandos docker para subir esses dois serviços, são:
+ Na data da publicação desse repositório (dezembro/2022), os comandos docker para subir esses dois serviços, são:
  
  <code>docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management</code>
  </br>e</br>
