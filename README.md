@@ -9,7 +9,7 @@ Os microserviços funcionam em conjunto com o RABBITMQ e com o KEYCLOAK. Dessa f
  Na data da publicação desse repositório, os comandos docker para subir esses dois serviços, são:
  
  <code>docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management</code>
- e
+ </br>e</br>
  <code>docker run -p 8802:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:20.0.2 start-dev</code>
 
 
