@@ -19,6 +19,7 @@ Após subir o KEYCLOAK, você deverá configurar um novo REALM, chamado 'keycloa
 
 Não entrarei em detalhes sobre como configurar essas duas aplicações, pois isso foge ao escopo. Caso não saiba fazer isso, entre nos seus respectivos sites e leia  suas documentações (https://www.keycloak.org/ e https://www.rabbitmq.com/).
  
+ Na documentação, verifique, PRINCIPALMENTE, qual é a URI para solicitar o token de autenticação, no KEYCLOAK. O token será necessário para que você consiga fazer as requisições aos serviços.
  
 OBS: suba os containers RABBITMQ e KEYCLOAK, ANTES de subir os 4 microserviços, abaixo. Caso não faça isso, erros ocorrerão.
  
@@ -48,7 +49,7 @@ Para que cada microserviço funcione adequadamente, todos eles deverão estar em
  
  Em cada uma das requisições, acima, você deverá colocar um objeto 'Emailenviar' em seu corpo.
  
- O modelo desse objeto está no arquivo 'objEmailEnviar.txt', que está na raiz do projeto <code>conjunto-microservicos-envio-emails</code>. Está no formato JSON, prontinho para você copiar e colar, no seu client rest (recomendo o INSOMNIA
+ O modelo desse objeto está no arquivo 'objEmailEnviar.txt', que está na raiz do projeto <code>conjunto-microservicos-envio-emails</code>. Ele já está no formato JSON, prontinho para você copiar e colar, no seu client rest (recomendo o INSOMNIA, pois o POSTMAN não reconheceu os tokens de autenticação).
  
  O objeto possui alguns campos de configuração do email, para que seja possível seu envio. Preencha esses campos, corretamente, de acordo com as instruções do seu servidor de email.
  O objeto também possui campos para preenchimento dos dados do email, tais como: remetente, destinatário, assunto, corpo, etc. 
